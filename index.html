@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>kana.ninja</title>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Hiragana flashcards. Learn the Japanese Hiragana syllabary!" />
+    <meta name="keywords" content="japanese, hiragana, flashcards, syllabary" />
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel='stylesheet'  href="css/style.css" type="text/css" media="all" />
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-51685915-1', 'kana.ninja');
+      ga('send', 'pageview');
+    </script>
+    
+</head>
+<body>
+    <!-- noscript warning -->
+    <noscript>
+        <div class="container">
+            This site requires JavaScript.
+        </div>
+    </noscript>
+    
+    <!-- Settings menu -->
+    <div class="container settings-menu hidden">
+        <div class="btn-group-justified">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default btn-continue btn-close-settings">Back</button>
+            </div>
+        </div>
+        <div class="alert alert-danger alert-settings hidden"></div>
+        <h1>Syllabary <span class="pull-right">Choose one</span></h1>
+        <ul>
+            <li class="setting-hiragana">
+                <span class="glyphicon glyphicon-ok"></span>
+                <span class="settings-item">Hiragana</span>
+            </li>
+            <li class="setting-katakana">
+                <span class="glyphicon glyphicon-ok"></span>
+                <span class="settings-item">Katakana</span>
+            </li>
+        </ul>
+        
+        <h1>Character Sets</h1>
+        <ul>
+            <li class="setting-base-set">
+                <span class="glyphicon glyphicon-ok"></span>
+                <span class="settings-item">Base set</span>
+            </li>
+            <li class="setting-diacritics">
+                <span class="glyphicon glyphicon-ok"></span>
+                <span class="settings-item">Diacritics</span>
+            </li>
+            <li class="setting-digraphs">
+                <span class="glyphicon glyphicon-ok"></span>
+                <span class="settings-item">Digraphs</span>
+            </li>
+            <li class="setting-digraph-diacritics">
+                <span class="glyphicon glyphicon-ok"></span>
+                <span class="settings-item">Digraphs with diacritics</span>
+            </li>
+        </ul>
+        
+        <h1>Modes</h1>
+        <ul>
+            <li class="setting-show-mode">
+                <span class="glyphicon glyphicon-ok"></span>
+                <span class="settings-item">Show answer</span>
+            </li>
+            <li class="setting-choose-mode">
+                <span class="glyphicon glyphicon-ok"></span>
+                <span class="settings-item">Multiple choice</span>
+            </li>
+            <li class="setting-fill-mode">
+                <span class="glyphicon glyphicon-ok"></span>
+                <span class="settings-item">Fill in the blank</span>
+            </li>
+            <li class="setting-reverse-mode">
+                <span class="glyphicon glyphicon-ok"></span>
+                <span class="settings-item">Reverse</span>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Glossary -->
+    <div class="container glossary hidden">
+        <div class="btn-group-justified">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default btn-continue btn-close-glossary">Back</button>
+            </div>
+        </div>
+        <dl>
+            <dt>Base set</dt>
+            <dd>The base set of characters in either hiragana or katakana, also known as gojūon.</dd>
+            
+            <dt>Diacritics</dt>
+            <dd>A diacritic mark is a mark added to a character (also called an accent mark). Diacritic marks indicate that the sound produced by that character is different than normal. Both hiragana and katakana contain two diacritic marks, both of which are added to the upper-right of characters: the dakuten, which resembles a quote mark, and the handakuten, a small circle. For an English example, consider the "é" in resumé.</dd>
+            
+            <dt>Digraphs</dt>
+            <dd>Digraphs in the Japanese hiragana and katakana systems, also called yōon or youon, are pairs of kana that produce a different sound. Each pair consists of one gojūon character that ends in an "i" sound followed by a smaller version of the ya, yu, or yo kana. For example, in hiragana, combining き (ki) and や (ya) produces きゃ (kya). Examples of digraphs in English include "ch" and "th".</dd>
+            
+            <dt>Hiragana</dt>
+            <dd>One of the two modern Japanese syllabaries (the other being katakana; the kanji writing system is not covered here). Hiragana is commonly used to write words for which there are no kanji (or for which the kanji are less well known), among other things.</dd>
+            
+            <dt>Kana</dt>
+            <dd>The word kana refers to both the hiragana and katakana syllabaries and to the individual characters.</dd>
+            
+            <dt>Katakana</dt>
+            <dd>One of the two modern Japanese syllabaries. Katakana is used for things like (but not limited to) writing foreign words, technical terms, or to add emphasis.</dd>
+            
+            <dt>Syllabary</dt>
+            <dd>Because hiragana and katakana characters represent individual syllables, they are called syllabaries.</dd>
+        </dl>
+    </div>
+    
+    <!-- Main app container -->
+    <div class="container app hidden">
+        <!-- Header -->
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="text-center header">Hiragana Flashcards</h1>
+            </div>
+        </div>
+
+        <!-- Flashcard -->
+        <div class="panel panel-default">
+            <div class="answer-message"></div>
+            <div class="panel-body" id="current-kana">&nbsp;</div>
+        </div>
+        
+        <!-- Fill in the blank -->
+        <div class="row fill-in-the-blank">
+            <div class="col-sm-12">
+                <div class="input-group">
+                    <input type="text" class="form-control fill-answer" placeholder="What kana is this?">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default fill-answer-button" type="button">Check!</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Multiple choice -->
+        <div class="btn-group btn-group-justified multiple-choice">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default answer-button" id="answer-1" data-answer="0"></button>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default answer-button" id="answer-2" data-answer="1"></button>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default answer-button" id="answer-3" data-answer="2"></button>
+            </div>
+        </div>
+        
+        <!-- Show answer -->
+        <div class="btn-group btn-group-justified show-answer">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default show-next"> Next </button>
+            </div>
+        </div>
+        
+        <!-- Settings menu button -->
+        <div class="row settings-container">
+            <div class="col-xs-6 btn-group btn-glossary-wrapper">
+                <div class="btn-group-justified">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default btn-glossary">
+                            Glossary                 
+                        </button>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-xs-6 btn-group btn-settings-wrapper">
+                <div class="btn-group-justified">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default btn-settings">
+                            <span class="glyphicon glyphicon-cog pull-right"></span>
+                            Settings
+                        </button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        
+        <div class="adbox">
+            <script type="text/javascript"><!--
+            google_ad_client = "ca-pub-8065445272858541";
+            /* kana.ninja */
+            google_ad_slot = "4620119225";
+            google_ad_width = 320;
+            google_ad_height = 50;
+            //-->
+            </script>
+            <script type="text/javascript"
+            src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+            </script>
+        </div>
+    </div>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/kana.js"></script>
+</body>
+</html>

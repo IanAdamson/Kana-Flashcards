@@ -1,0 +1,197 @@
+/* Global */
+
+body, html {
+    height: 100%;
+    background: #136b9e;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 350px;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-continue {
+    margin: 15px 0 0 0;
+}
+
+.btn {
+    background: #5b8dab;
+    border-color: #5b8dab;
+    font-weight: 700;
+    border-radius: 2px;
+    color: #cedde6;
+    letter-spacing: 1px;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+    background: #6d9ebc;
+    border-color: #6d9ebc;
+}
+
+.btn .glyphicon {
+    margin-top: 2px;
+}
+
+/* Settings, glossary, and noscript warning */
+
+.settings-menu, .glossary, .noscript {
+    min-height: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color: #0d496b;
+    padding-bottom: 15px;
+    color: #aac0cc;
+}
+
+.noscript {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.settings-menu h1, .glossary h1{
+    font-size: 18px;
+    border-bottom: 1px solid #aac0cc;
+    padding: 0 0 3px 0;
+    clear: both;
+}
+
+.settings-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.settings-menu li {
+    width: 25%;
+    float: left;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    
+    /* Precent user from accidentally highlighting settings when toggling */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.settings-menu li settings-item {
+    font-size: 12px; 
+    display: block;
+}
+
+.settings-menu .glyphicon {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    display: block;
+}
+
+.settings-menu .glyphicon-inactive .glyphicon {
+    color: #44738d;
+}
+
+.alert-settings {
+    margin: 15px 0;
+    padding: 6px;
+}
+
+.glossary dl {
+    margin: 0;
+}
+
+.glossary dt {
+    margin: 15px 0 0 0;
+}
+
+.glossary dd {
+    padding: 0 0 0 10px;
+}
+
+/* App main */
+
+.header {
+    color: #96bbd1;
+}
+
+.panel-body {
+    text-align: center;
+    font-size: 8em;
+    background: #dce9f1;
+}
+
+.answer-message .alert {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.answer-message .alert-success {
+    background: #bcdcaf;
+    border-color: #bcdcaf;
+}
+
+.answer-message .alert-danger {
+    background: #deb7b6;
+    border-color: #deb7b6;
+}
+
+.multiple-choice button {
+    font-weight: bold;
+}
+
+.settings-container {
+    margin-top: 20px;
+}
+
+.answer-message {
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    position: absolute;
+}
+
+.answer-button {
+    font-size: 18px;
+}
+
+.answer-message .alert {
+    margin: 10px;
+    padding: 5px;
+}
+
+.answer-message span {
+    display: block;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.btn-disabled {
+    pointer-events: none;
+    
+}
+
+.btn-glossary-wrapper {
+    padding-right: 6px;
+}
+
+.btn-settings-wrapper {
+    padding-left: 6px;
+}
+
+.adbox {
+    margin: 20px 0;
+    text-align: center;
+}
