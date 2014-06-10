@@ -2,7 +2,7 @@
  * kana.js - Ian Adamson <ian@kana.ninja>
  * 
  * This app provides a flashcard-based approach to learning
- * the Japanese Hiragana and Katakana syllabaries.
+ * the Japanese hiragana and katakana syllabaries.
  *
  * This work is licensed under the Creative Commons
  * Attribution-NonCommercial-ShareAlike 3.0 United States
@@ -222,6 +222,7 @@
             var temp_message = '<div class="alert alert-success">Correct!</div>';
         } else {
             var temp_message = '<div class="alert alert-danger">Incorrect!</div>';
+            $( ".answer-button:contains('" + correct_answer + "')" ).prepend('<span class="glyphicon glyphicon-ok pull-right"></span>');
             // Append glyphicon glyphicon-ok span to the correct answer?
         }
         
